@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Minha Loja de Maquiagens</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+        <img src="imagens/logo.jpeg" alt="logo da Loja" id="Logo">
+    </header>
+    <h1>Bem-vinda a minha Loja de Maquiagens</h1>
+    <nav>
+      <button onclick="mostrarSecao('produtos')">Produtos</button>
+      <button onclick="mostrarSecao('quem-somos')">Quem Somos</button>
+      <button onclick="mostrarSecao('localizacao')">Localização</button>
+      <button onclick="mostrarSecao('contato')">Contato</button>
+    </nav>
+
+    <section id="quem-somos" class="escondido">
+      <h2>Quem somos</h2>
+      <p>
+        Somos uma empresa apaixonada por beleza, autoestima e inovação. Oferecemos maquiagens de qualidade com muito carinho e estilo!
+      </p>
+    </section>
+
+    <section id="localizacao" class="escondido">
+      <h2>Localização</h2>
+      <p>Estamos localizados no coração da cidade de Araruna-Paraná!</p>
+    </section>
+
+    <section id="contato" class="escondido">
+      <h2>Contato</h2>
+      <p>Fale conosco pelo WhatsApp ou Redes Sociais!</p>
+      <p>Fone: 3434-434 Instagram: Makeup-Store</p>
+    </section>
+
+    <section id="produtos">
+      <h2>Produtos</h2>
+      <div class="galeria">
+        <div class="produto">
+          <img src="imagens/Batom.avif" alt="Batom" />
+          <h3>Batom Nude</h3>
+          <p class="preco">R$ 29,90</p>
+          <button>Saiba mais</button>
+        </div>
+        <div class="produto">
+          <img src="imagens/Blush.jpg" alt="Blush" />
+          <h3>Blush Rosado</h3>
+          <p class="preco">R$ 35,00</p>
+          <button>Saiba mais</button>
+        </div>
+        <div class="produto">
+          <img src="imagens/Bronzer.webp" alt="Bronzer" />
+          <h3>Bronzer Natural</h3>
+          <p class="preco">R$ 42,50</p>
+          <button>Saiba mais</button>
+        </div>
+        <div class="produto">
+          <img src="imagens/Corretivo.jpg" alt="Corretivo" />
+          <h3>Corretivo Líquido</h3>
+          <p class="preco">R$ 27,00</p>
+          <button>Saiba mais</button>
+        </div>
+        <div class="produto">
+          <img src="imagens/Delineador.avif" alt="Delineador" />
+          <h3>Delineador Preto</h3>
+          <p class="preco">R$ 31,00</p>
+          <button>Saiba mais</button>
+        </div>
+        <div class="produto">
+          <img src="imagens/Máscara.webp" alt="Máscara" />
+          <h3>Máscara para Cílios</h3>
+          <p class="preco">R$ 28,90</p>
+          <button>Saiba mais</button>
+        </div>
+        <div class="produto">
+          <img src="imagens/Paleta de Sombras.webp" alt="Paleta" />
+          <h3>Paleta de Sombras</h3>
+          <p class="preco">R$ 55,00</p>
+          <button>Saiba mais</button>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      function mostrarSecao(id) {
+        const secoes = document.querySelectorAll("section");
+        secoes.forEach((secao) => {
+          if (secao.id === id) {
+            secao.classList.remove("escondido");
+          } else {
+            secao.classList.add("escondido");
+          }
+        });
+      }
+
+      // Mostrar produtos por padrão ao carregar a página
+      window.onload = function () {
+        mostrarSecao("produtos");
+      };
+    </script>
+  </body>
+</html>

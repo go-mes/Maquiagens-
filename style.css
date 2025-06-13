@@ -1,0 +1,121 @@
+body {
+  background-color: pink;
+  color: black;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 30px;
+}
+
+h1 {
+  color: deeppink;
+  margin-top: 10px; /* para dar um espaçamento menor entre logo e título */
+}
+
+nav {
+  margin-top: 20px;
+}
+
+button {
+  background-color: deeppink;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: pink;
+  color: black;
+}
+
+section {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px lightgray;
+}
+
+h2 {
+  color: deeppink;
+}
+
+.galeria {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Caixinha do produto */
+.produto {
+  background-color: white;
+  border: 2px solid deeppink;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(221, 20, 83, 0.2);
+  padding: 15px;
+  width: 220px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.produto:hover {
+  transform: scale(1.05);
+}
+
+.produto img {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.produto h3 {
+  color: deeppink;
+  margin: 10px 0 5px 0;
+  font-size: 18px;
+}
+
+.preco {
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.produto button {
+  background-color: deeppink;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.produto button:hover {
+  background-color: pink;
+  color: black;
+}
+
+/* Classe para esconder seções */
+.escondido {
+  display: none;
+}
+
+/* Ajustes na logo */
+#Logo {
+  width: 100px;              /* Tamanho menor e mais discreto */
+  margin: 20px auto 10px;    /* Espaço em cima, centralizado e espaço embaixo */
+  display: block;
+  border-radius: 20px;       /* Bordas arredondadas mais suaves */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.25); /* Sombra mais marcante e charmosa */
+  transition: transform 0.3s ease;
+}
+
+#Logo:hover {
+  transform: scale(1.1);     /* Pequeno zoom ao passar o mouse para um efeito legal */
+  box-shadow: 0 8px 12px rgba(221, 20, 83, 0.7); /* Sombra rosa ao hover */
+}
