@@ -125,32 +125,13 @@ h2 {
   box-shadow: 0 8px 12px rgba(221, 20, 83, 0.7); /* Sombra rosa ao hover */
 }
 
-.none-loja{
-  font-family: 'Great Vibes', italic;
-  font-size: 36px;
-  color: deeppink;
-  margin-top: 0;
-}
-
-.subtitulo{
-  font-size: 14px;
-  letter-spacing: 1px;
-  color: black;
-  margin-top: 4px;
-  font-style: cursive;
-}
-
-.marca{
-  text-align: center;
-  margin-top: 10px;
-}
-
 .secoes-topo {
   position: fixed;
   top: 10px;
   right: 10px;
   display: flex;
   gap: 15px;
+  align-items: flex-start;
   background-color: transparent; /* ou branco se quiser */
   z-index: 1000;
 }
@@ -164,4 +145,5 @@ h2 {
   font-weight: bold;
   font-size: 14px;
   user-select: none;
+  text-align: center;
 }
