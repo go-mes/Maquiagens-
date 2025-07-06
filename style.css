@@ -3,17 +3,13 @@ body {
   color: black;
   font-family: Arial, sans-serif;
   text-align: center;
-  padding: 30px;
 }
 
-h1 {
-  color: deeppink;
-  margin-top: 10px; /* para dar um espaçamento menor entre logo e título */
+.h1{
+  margin: 15px;
 }
+  
 
-nav {
-  margin-top: 20px;
-}
 
 button {
   background-color: deeppink;
@@ -32,7 +28,7 @@ button:hover {
 }
 
 section {
-  margin-top: 40px;
+  margin-top: 70px;
   padding: 20px;
   background-color: white;
   border-radius: 10px;
@@ -67,9 +63,9 @@ h2 {
 }
 
 .produto img {
-  width: 200px;
+  width: 100px;
   height: auto;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 .produto h3 {
@@ -130,20 +126,32 @@ h2 {
   top: 10px;
   right: 10px;
   display: flex;
-  gap: 15px;
-  align-items: flex-start;
-  background-color: transparent; /* ou branco se quiser */
+  gap: 10px;
+  align-items: center;
   z-index: 1000;
 }
 
 .secoes-topo section {
-  padding: 8px 12px;
+  padding: 4px 8px;
   background-color: deeppink;
   color: white;
-  border-radius: 6px;
+  border-radius: 4px;
   cursor: pointer;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 12px;
   user-select: none;
   text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.secoes-topo section:hover {
+  background-color: pink;
+  color: black;
+}
+
+.footer{
+  background-color: black;
+  padding: 15px;
+  text-align: center;
+  color: white;
 }
