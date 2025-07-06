@@ -107,12 +107,17 @@ h2 {
 
 /* Ajustes na logo */
 #Logo {
-  width: 100px;              /* Tamanho menor e mais discreto */
-  margin: 20px auto 10px;    /* Espaço em cima, centralizado e espaço embaixo */
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  width: 80px;              /* Tamanho menor e mais discreto */
+  margin: 0;    /* Espaço em cima, centralizado e espaço embaixo */
   display: block;
-  border-radius: 20px;       /* Bordas arredondadas mais suaves */
+  border-radius: 12px;       /* Bordas arredondadas mais suaves */
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.25); /* Sombra mais marcante e charmosa */
   transition: transform 0.3s ease;
+  cursor: pointer;
+  z-index: 1000;
 }
 
 #Logo:hover {
@@ -121,7 +126,7 @@ h2 {
 }
 
 .none-loja{
-  font-family: "Great Vibes" cursive;
+  font-family: 'Great Vibes', italic;
   font-size: 36px;
   color: deeppink;
   margin-top: 0;
@@ -132,10 +137,31 @@ h2 {
   letter-spacing: 1px;
   color: black;
   margin-top: 4px;
-  font-style: italic;
+  font-style: cursive;
 }
 
 .marca{
   text-align: center;
   margin-top: 10px;
+}
+
+.secoes-topo {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  gap: 15px;
+  background-color: transparent; /* ou branco se quiser */
+  z-index: 1000;
+}
+
+.secoes-topo section {
+  padding: 8px 12px;
+  background-color: deeppink;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+  user-select: none;
 }
