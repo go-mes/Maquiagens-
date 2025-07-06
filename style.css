@@ -119,3 +119,23 @@ h2 {
   transform: scale(1.1);     /* Pequeno zoom ao passar o mouse para um efeito legal */
   box-shadow: 0 8px 12px rgba(221, 20, 83, 0.7); /* Sombra rosa ao hover */
 }
+
+.none-loja{
+  font-family: "Great Vibes" cursive;
+  font-size: 36px;
+  color: deeppink;
+  margin-top: 0;
+}
+
+.subtitulo{
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: black;
+  margin-top: 4px;
+  font-style: italic;
+}
+
+.marca{
+  text-align: center;
+  margin-top: 10px;
+}
